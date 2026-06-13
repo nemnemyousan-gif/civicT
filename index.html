@@ -1,44 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>太田祐介 - Civic Tech Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 1.2rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    header img.logo {
+      width: 48px;
+      height: 48px;
+    }
+    nav a {
+      margin-right: 1rem;
+      color: #2563eb;
+      text-decoration: none;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+    section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-left: 4px solid #2563eb;
+      padding-left: 0.5rem;
+    }
+    .badge {
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      background: #e0edff;
+      color: #2563eb;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #777;
+    }
+    .profile-img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+<img src="profile_side.svg" class="profile-img" alt="profile">
+  <div>
+    <strong>太田 祐介</strong><br>
+    <nav>
+      <a href="#about">自己紹介</a>
+      <a href="#civictech">Civic Tech</a>
+      <a href="#workflow">ワークフロー</a>
+      <a href="achievements.html">実績</a>
+      <a href="en/index.html">English</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+  <h2>自己紹介</h2>
+  <img src="profile.png" class="profile-img" alt="profile">
+  <p>
+    名前：<strong>太田 祐介</strong><br>
+    出身地：埼玉県越谷市<br>
+    現在の勤務地：栃木県宇都宮市
+  </p>
+  <p>
+    マンション管理・地域コミュニティ運営の現場で見えてくる課題を、  
+    シビックテックの視点で改善していく取り組みを続けています。
+  </p>
+</section>
+
 <section id="civictech">
   <h2>シビックテックの取り組み</h2>
   <span class="badge">Civic Tech</span>
   <span class="badge">Community</span>
   <span class="badge">Open Data</span>
 
-  <p>
-    私は、マンション管理や地域活動の現場で見えてくる課題を、デジタルとデザインの力で少しずつ改善していく取り組みを続けています。
-    派手なプロジェクトではなく、生活に密着した「小さな困りごと」を解決することを大切にしています。
-  </p>
-
   <ul>
-    <li><strong>マンション管理のデジタル化・情報整理</strong><br>
-      管理規約・総会資料・修繕履歴などを体系化し、住民が迷わずアクセスできる構造を設計。
-      紙中心の運用からクラウド管理への移行を検討し、情報アーキテクチャの観点から改善案を作成しています。
+    <li><strong>マンション管理のデジタル化</strong><br>
+      規約・総会資料・修繕履歴の体系化、クラウド管理の導入検討。
     </li>
-
-    <li><strong>多言語対応（英語化）によるアクセシビリティ向上</strong><br>
-      外国籍住民向けに重要文書の英語版を作成し、「翻訳」ではなく「伝わる文書」を意識した表現を研究。
-      GitHub 上で翻訳プロセスを管理し、変更履歴を残す仕組みを試行しています。
+    <li><strong>多言語対応（英語化）</strong><br>
+      外国籍住民向けに重要文書の英語版を作成し、GitHubで翻訳管理。
     </li>
-
-    <li><strong>地域イベント（マンション内祭り）の運営改善</strong><br>
-      主催者の高齢化により運営が限界に近づいている問題を調査。
-      参加者管理・備品リスト・スケジュールなどをデジタル化し、属人化を減らす仕組みを提案。
-      「誰でも引き継げる運営マニュアル」を作るため、ワークフローの可視化を行っています。
+    <li><strong>地域イベントの運営改善</strong><br>
+      高齢化した運営体制の課題を調査し、デジタル化と引き継ぎ可能な仕組みを提案。
     </li>
-
-    <li><strong>住民アンケートの設計とデータ分析</strong><br>
-      修繕計画やイベント運営に関するアンケートを設計し、回答データを可視化。
-      合意形成をスムーズにするための「住民の声の見える化」を実践しています。
-    </li>
-
-    <li><strong>GitHub を使ったオープンな学習・共有</strong><br>
-      学習メモや文書テンプレート、改善案を GitHub で公開。
-      試行錯誤のプロセスごとオープンにすることで、同じ課題を持つ人の参考になる形を目指しています。
+    <li><strong>住民アンケートの設計と分析</strong><br>
+      意思決定に使えるデータ可視化を実施。
     </li>
   </ul>
-
-  <p>
-    小さく作り、試し、改善し、その過程を共有すること。
-    その積み重ねこそが、私の考えるシビックテックです。
-  </p>
 </section>
+
+<section id="workflow">
+  <h2>活動ワークフロー</h2>
+  <p>私の Civic Tech 活動は、以下のような流れで進めています。</p>
+
+  <!-- 軽量SVGワークフロー図 -->
+  <svg width="100%" height="200">
+    <rect x="10" y="20" width="180" height="40" fill="#e0edff" rx="6"/>
+    <text x="20" y="45">課題の発見</text>
+
+    <line x1="200" y1="40" x2="260" y2="40" stroke="#555" />
+
+    <rect x="260" y="20" width="180" height="40" fill="#e0edff" rx="6"/>
+    <text x="270" y="45">調査・ヒアリング</text>
+
+    <line x1="440" y1="40" x2="500" y2="40" stroke="#555" />
+
+    <rect x="500" y="20" width="180" height="40" fill="#e0edff" rx="6"/>
+    <text x="510" y="45">改善案の作成</text>
+
+    <line x1="680" y1="40" x2="740" y2="40" stroke="#555" />
+
+    <rect x="740" y="20" width="180" height="40" fill="#e0edff" rx="6"/>
+    <text x="750" y="45">公開・共有</text>
+  </svg>
+
+</section>
+
+</main>
+
+<footer>
+  © 2026 Yusuke Ota
+</footer>
+
+</body>
+</html>
